@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Course in Flow
+Course In Flow is an innovative web application that harnesses the power of Artificial Intelligence (AI) to streamline the process of managing courses, including enrollment, scheduling, and resource allocation. By integrating with external services like Unsplash and YouTube, Course In Flow automatically enhances course content by retrieving royalty-free or stock photos related to the course topics and retrieving YouTube videos related to the course content. Additionally, it utilizes AI to automatically generate summaries based on YouTube video transcriptions and generate chapters and quizzes for each course chapter. It aims to provide an intuitive interface for both instructors and students, enhancing the overall learning experience.
+
+## Features
+- **Automated Summary Generation:**: Generates summaries based on YouTube video transcriptions.
+- **Automated Chapter and Quiz Generation:**: Generates chapters and quizzes for each course chapter.
+- **User Authentication**: Users can sign up, log in, and log out securely using Google OAuth 2.0.
+- **Course Management**: Instructors can create, update, and delete courses.
+- **Enrollment**: Students can enroll in courses and view their enrolled courses.
+- **Scheduling**: Users can view course schedules and manage their availability.
+- **Unsplash Integration**: Automatically retrieves royalty-free or stock photos related to the course topics.
+- **YouTube Integration:**: Automatically retrieves YouTube videos related to the course content.
+
+## Tech Stack
+
+- **React**: JavaScript library for building user interfaces.
+- **Stripe**: Payment processing API for online transactions.
+- **Redux**: State management library for managing application state.
+- **React Router**: Declarative routing for React applications.
+- **Material-UI**: React components that implement Google's Material Design.
+- **Axios**: Promise-based HTTP client for making AJAX requests.
+- **Tailwind CSS**: A utility-first CSS framework for styling web applications.
+- **Next.js**: React framework for building server-side rendered and statically generated applications.
+- **Googleapis**: Google APIs client library for Node.js.
+- **MySQL**: SQL database for storing application data.
+- **Prisma**: Open source Node.js and TypeScript ORM.
+- **JWT**: JSON Web Token for authentication and authorization.
+- **bcrypt**: Password hashing library for securing user passwords.
+- **Prisma**: Database toolkit for TypeScript and Node.js.
+- **NextAuth.js Prisma Adapter**: Prisma adapter for NextAuth.js authentication library.
+- **YouTube Transcript**: Library for fetching transcripts of YouTube videos.
+- **Unsplash-js**: JavaScript wrapper for the Unsplash API.
+
+### AI
+- **OpenAI**: AI platform for natural language processing and other AI tasks.
+- **Langchain**: Library for natural language processing and translation.
 
 ## Getting Started
 
-First, run the development server:
+To run Course in Flow locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone this repository: `git clone https://github.com/Cov12/course-in-flow.git`
+2. Navigate to the project directory: `cd course-in-flow`
+3. Install dependencies for both the frontend and backend:
+   - Frontend|Backend: `npm install`
+4. Set up environment variables:
+   - Create a `.env` file in the `root` directory and define the following variables:
+     ```
+     PORT=3000
+     DATABASE_URL
+     NEXTAUTH_SECRET
+     GOOGLE_CLIENT_ID
+     GOOGLE_CLIENT_SECRET
+     OPENAI_API_KEY
+     UNSPLASH_API_KEY
+     YOUTUBE_API_KEY
+     STRIPE_API_KEY
+     ```
+5. Start the application:
+   - npm run dev
+6. Access the application in your browser at `http://localhost:3000`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Important Notes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Make sure to replace placeholders in the environment variables with your actual configuration details.
+- This application is still under development and may contain bugs or incomplete features.
+- Feel free to contribute to the project by submitting bug fixes, feature enhancements, or suggestions via GitHub issues and pull requests.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## License
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Course in Flow is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
