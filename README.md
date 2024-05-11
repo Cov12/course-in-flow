@@ -26,7 +26,7 @@ Course In Flow is an innovative web application that harnesses the power of Arti
 - **Prisma**: Open source Node.js and TypeScript ORM.
 - **JWT**: JSON Web Token for authentication and authorization.
 - **bcrypt**: Password hashing library for securing user passwords.
-- **Prisma**: Database toolkit for TypeScript and Node.js.
+- **Prisma**: Database ORM for data modeling, automated migrations, and type-safety.
 - **NextAuth.js Prisma Adapter**: Prisma adapter for NextAuth.js authentication library.
 - **YouTube Transcript**: Library for fetching transcripts of YouTube videos.
 - **Unsplash-js**: JavaScript wrapper for the Unsplash API.
